@@ -21,7 +21,7 @@ public class CreateQRCode {
         int width = 300;
         int height = 300;
         String format  = "png";
-        String content = "www.xuxianda.com";
+        String content = "脆虾";
 
         //定义二维码参数
         Map map = new HashMap();
