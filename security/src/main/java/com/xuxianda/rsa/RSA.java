@@ -28,6 +28,10 @@ public class RSA {
             RSAPublicKey rsaPublicKey = (RSAPublicKey)keyPair.getPublic();
             RSAPrivateKey rsaPrivateKey  = (RSAPrivateKey)keyPair.getPrivate();
 
+            System.out.println("公钥-"+rsaPublicKey.getFormat()+"-"+rsaPublicKey.getModulus());
+            System.out.println("私钥-"+rsaPrivateKey.getFormat()+"-"+rsaPrivateKey.getModulus());
+
+
             //2.执行签名
             PKCS8EncodedKeySpec pkcs8EncodedKeySpec = new PKCS8EncodedKeySpec(rsaPrivateKey.getEncoded());//用私钥
             KeyFactory keyFactory = KeyFactory.getInstance("RSA");
